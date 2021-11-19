@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Clickjacking Vulnerability</title>
+<style>
+      body{ margin:0 auto; }
+      iframe {
+      position:relative;
+      width:800px;
+      height:800px;
+      opacity:0.5;
+      z-index:2;
+      }
+      div {
+      position:absolute;
+      width:800px;
+      height:600px;
+      z-index:1;
+      }
+      img{
+          width: 500px;
+          height: 480px;
+      }
+      .btn-warning {
+          margin-left: 10px;
+          background-color: #ff4e00;
+          background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+          border-radius: 2rem;
+          width: 150px;
+          padding: 10px;
+          font-size: 1rem;
+          font-weight: 300px;
+      }
+      h3 {
+          font-size: 2rem;
+      }
+  </style>
+</head>
+<body>
+<h3><a href="lab_1.php" style="padding-right: 10px;"><img src="../../assets/img/left.png" style="width:35px; height:35px;" /></a>
+Clickjacking Vulnerability</h3>
+<div>
+<center><img src="wheel.gif" /></center>
+<center><button class="btn btn-warning">Spin the Wheel</button><center>
+<center><h2>SPIN THE WHEEL TO WIN EXCITING PRIZES</h2><center>
+</div>
+<iframe src="lab_1.php"></iframe>
+</body>
+<html>

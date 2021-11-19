@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and text allignment</title>
+    <style>
+      #container{
+          border: 3px solid rgb(240, 7, 7);
+          margin :auto;
+          width: 700px;
+      }  
+      .all{
+          background-color: antiquewhite;
+          border: 3px solid sienna;
+          margin: 3px;
+          padding: 10px 23px;  
+          box-sizing: border-box;
+      }
+      #first{
+        float: left;
+        width: 49%;
+      }
+     #second{
+        float: left;
+        width: 49%;
+     }
+     #third{
+        clear: both;
+     }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="first" class="all">
+            <h3>First</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam, quae doloribus quod eveniet illum
+                nisi quas optio repellat exercitationem magni ullam. Reiciendis aliquam neque id praesentium molestias
+                quas nobis?</p>
+        </div>
+        <div id="second" class="all">
+            <h3>Second</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam, quae doloribus quod eveniet illum
+                nisi quasdfgdfgrepellat exercitationem magni ullam. Reiciendis aliquam neque id praesentium molestias
+                quas nobis?</p>
+        </div>
+        <div id="third" class="all">
+            <h3>First</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam, quae doloribus quod eveniet illum
+                nisi quas optio repellat exercitationem magni ullam. Reiciendis aliquam neque id praesentium molestias
+                quas nobis?</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
